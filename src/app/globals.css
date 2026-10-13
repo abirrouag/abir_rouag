@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0B1020;
+    --surface-card: #121A33;
+    --surface-hover: #1A2447;
+    --border-subtle: #223055;
+    --text-primary: #E8ECF8;
+    --text-muted: #9AA7C7;
+
+    --accent-teal: #2DD4BF;
+    --accent-teal-alpha: rgba(45, 212, 191, 0.25);
+    --accent-amber: #F59E0B;
+    --accent-amber-alpha: rgba(245, 158, 11, 0.25);
+    --accent-violet: #8B5CF6;
+    --accent-emerald: #10B981;
+  }
+
+  .light {
+    --bg-primary: #F7F8FC;
+    --surface-card: #FFFFFF;
+    --surface-hover: #F0F3FA;
+    --border-subtle: #E2E8F0;
+    --text-primary: #0B1020;
+    --text-muted: #475569;
+
+    --accent-teal: #0D9488;
+    --accent-teal-alpha: rgba(13, 148, 136, 0.2);
+    --accent-amber: #D97706;
+    --accent-amber-alpha: rgba(217, 119, 6, 0.2);
+    --accent-violet: #7C3AED;
+    --accent-emerald: #059669;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+  }
+
+  /* Keyboard Focus Rings for WCAG AA Accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--accent-teal);
+    outline-offset: 3px;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-card {
+  background: rgba(18, 26, 51, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+}
+
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-nav {
+  background: rgba(11, 16, 32, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.light .glass-nav {
+  background: rgba(247, 248, 252, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Background Grid Pattern */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.light .bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal);
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

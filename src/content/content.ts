@@ -1,0 +1,433 @@
+import { PortfolioContent } from "@/types";
+
+export const portfolioContent: PortfolioContent = {
+  personal: {
+    name: "Abir Rouag",
+    roleTitle: "IT Engineering Student · Business Analyst · Data & BI",
+    heroSubtitle: "Telecom engineer turned data & business analyst. I turn messy data and unclear requirements into decisions teams can trust.",
+    location: "Sousse, Tunisia · Open to international internships",
+    email: "rouagabir@gmail.com",
+    phone: "+216 24 855 142",
+    githubUrl: "https://github.com/abirrouag",
+    linkedinUrl: "TODO: https://linkedin.com/in/abir-rouag",
+    avatarPath: "/assets/abir.jpg", // TODO: replace with photo if available
+    cvPdfPath: "/assets/Abir_Rouag_CV.pdf", // TODO: add actual PDF file
+    availabilityBadge: "🟢 Available for Business Analyst internships (global / remote-friendly)",
+  },
+
+  heroKpis: [
+    {
+      id: "kpi-1",
+      value: 4,
+      suffix: "",
+      label: "Data Sources Unified",
+      description: "GA4, Meta Ads, LinkedIn Ads, CRM consolidated into one ETL view",
+      iconName: "Database",
+    },
+    {
+      id: "kpi-2",
+      value: 5,
+      suffix: "",
+      label: "KPIs Tracked",
+      description: "CAC, LTV, ROAS, CTR, Conversion Rate dashboards built in Power BI",
+      iconName: "LineChart",
+    },
+    {
+      id: "kpi-3",
+      value: 776,
+      suffix: "K",
+      label: "Purchase Events Analyzed",
+      description: "Cleaned from 1.07M raw transactions across 5,852 customers",
+      iconName: "ShoppingBag",
+    },
+    {
+      id: "kpi-4",
+      value: 200,
+      suffix: "+",
+      label: "Candidates Recruited",
+      description: "Screened, interviewed and onboarded for AIESEC in Sousse",
+      iconName: "Users",
+    },
+    {
+      id: "kpi-5",
+      value: 120,
+      suffix: "+",
+      label: "Member Org Led",
+      description: "VP Finance & Legalities managing 20,000+ TND event budgets",
+      iconName: "Briefcase",
+    },
+    {
+      id: "kpi-6",
+      value: 4,
+      suffix: "",
+      label: "Languages Spoken",
+      description: "Arabic (Native), French (Fluent), English (Fluent), Turkish (Intermediate)",
+      iconName: "Globe",
+    },
+  ],
+
+  about: {
+    bio: "Enrolled IT engineering student with a telecommunications engineering background and hands-on experience in data gathering, data analysis and reporting for business teams. Experienced in requirements and gap analysis, process audit, Power BI dashboards and stakeholder communication in international teams. Seeking a Business Analyst internship to support change in a global organization.",
+    whatIBring: [
+      {
+        id: "bring-1",
+        title: "Requirements & Gap Analysis",
+        description: "Translating ambiguous business needs and complex operational workflows into clear, actionable technical specifications and system scope.",
+        iconName: "FileCheck",
+        tags: ["Gap Analysis", "Use Cases", "Stakeholder Alignment", "User Stories"],
+      },
+      {
+        id: "bring-2",
+        title: "Data → Decisions",
+        description: "Building reliable ETL pipelines, PostgreSQL databases, dbt models, and interactive Power BI dashboards that turn raw data into executive insights.",
+        iconName: "TrendingUp",
+        tags: ["Power BI", "SQL / dbt", "Python Data Analytics", "KPI Dashboards"],
+      },
+      {
+        id: "bring-3",
+        title: "Process & Internal Control",
+        description: "Conducting rigorous internal audits, identifying operational process gaps, assessing compliance risks, and implementing corrective controls.",
+        iconName: "ShieldCheck",
+        tags: ["Internal Audit", "Risk Mitigation", "Financial Compliance", "Process Mapping"],
+      },
+    ],
+    languages: [
+      { name: "Arabic", level: "Native", percentage: 100, code: "AR" },
+      { name: "French", level: "Fluent", percentage: 90, code: "FR" },
+      { name: "English", level: "Fluent", percentage: 90, code: "EN" },
+      { name: "Turkish", level: "Intermediate", percentage: 60, code: "TR" },
+    ],
+  },
+
+  experiences: [
+    {
+      id: "exp-1",
+      role: "Marketing Data & BI Analyst",
+      company: "Popup Company",
+      location: "Sousse, Tunisia",
+      period: "Jun 2026 – Sep 2026",
+      pipelineStage: "Insight",
+      bullets: [
+        "Consolidated 4 data sources (GA4, Meta Ads, LinkedIn Ads, CRM) through ETL pipelines into one multi-channel view, replacing manual reporting.",
+        "Analyzed campaigns, attribution and A/B tests to evaluate performance and guide budget allocation.",
+        "Designed Power BI and Looker Studio dashboards tracking 5 KPIs (CAC, LTV, ROAS, CTR, conversion rate) and presented recommendations to management.",
+      ],
+      impactResult: "Gave stakeholders one reliable view of channel performance, enabling faster, data-backed budget decisions.",
+      technologies: ["GA4", "Meta Ads", "LinkedIn Ads", "CRM", "ETL", "Power BI", "Looker Studio"],
+    },
+    {
+      id: "exp-2",
+      role: "International Buyer",
+      company: "OZEOL",
+      location: "Sousse, Tunisia",
+      period: "Mar 2024 – Oct 2024",
+      pipelineStage: "Load",
+      bullets: [
+        "Negotiated prices, delivery terms and contracts with suppliers across 2 countries (China, India).",
+        "Tracked supplier performance, order fulfillment, and price variances using Excel and CRM workflows.",
+      ],
+      impactResult: "Optimized procurement terms and established transparent tracking of supplier fulfillment deadlines.",
+      technologies: ["Procurement Negotiation", "Supplier Tracking", "CRM", "Advanced Excel", "International Commerce"],
+    },
+    {
+      id: "exp-3",
+      role: "Network Engineering Intern",
+      company: "Tunisie Telecom",
+      location: "Sousse, Tunisia",
+      period: "Jan 2023 – Jun 2023",
+      pipelineStage: "Extract",
+      bullets: [
+        "Analyzed technical requirements and environmental constraints for telecommunications infrastructure.",
+        "Contributed to the engineering design and cost optimization of an FTTX/GPON optical network for a residential subdivision in Sousse.",
+      ],
+      impactResult: "Delivered complete technical and feasibility specifications for fiber infrastructure layout.",
+      technologies: ["FTTX / GPON", "Requirements Analysis", "Network Design", "Cost Estimation", "Telecom Standards"],
+    },
+    {
+      id: "exp-4",
+      role: "Platform Enhancement Intern",
+      company: "GoMyCode",
+      location: "Sousse, Tunisia",
+      period: "Jul 2022 – Aug 2022",
+      pipelineStage: "Transform",
+      bullets: [
+        "Improved usability, navigation and feature functionality of the HR development section of the company web platform.",
+        "Tested platform features with the internal team and conducted user feedback sessions to refine requirement specs.",
+      ],
+      impactResult: "Enhanced user experience and resolved UI/UX bottlenecks in HR learning workflows.",
+      technologies: ["UI/UX Testing", "Requirements Validation", "HR Tech", "User Feedback", "Agile Testing"],
+    },
+  ],
+
+  projects: [
+    {
+      id: "proj-1",
+      title: "Marketing Funnel & Revenue Analytics",
+      subtitle: "Multi-channel attribution, conversion analysis & interactive budget simulator",
+      stack: ["PostgreSQL", "Power BI", "FastAPI"],
+      categories: ["Marketing", "BI"],
+      keyFinding: "Paid Search converted 13.3% vs 5.8% for Social (2.3x higher) and closed in 11 vs 34 days (3x faster).",
+      problem: "Marketing leadership lacked a consolidated attribution view across disparate ad platforms (GA4, Meta, LinkedIn), causing inefficient spend allocation.",
+      approach: "Built unified PostgreSQL ETL schema, exposed reporting endpoints via FastAPI, and engineered an interactive Power BI dashboard with scenario modeling.",
+      result: "Enabled management to reallocate budget towards high-converting channels with a 3x faster sales velocity.",
+      metrics: [
+        { label: "Paid Search Conversion", value: "13.3%" },
+        { label: "Social Conversion", value: "5.8%" },
+        { label: "Paid Search Sales Cycle", value: "11 days" },
+        { label: "Social Sales Cycle", value: "34 days" },
+      ],
+      visualType: "funnel",
+      githubUrl: "TODO: https://github.com/abirrouag/marketing-funnel-analytics",
+      liveDemoUrl: undefined, // TODO: add URL if available
+    },
+    {
+      id: "proj-2",
+      title: "Procurement Analytics & Budget Variance Automation",
+      subtitle: "Star schema modeling & automated fraud detection on purchase order datasets",
+      stack: ["PostgreSQL", "dbt", "Power BI"],
+      categories: ["Procurement", "BI", "Data Engineering"],
+      keyFinding: "Modeled ~420K purchase-order lines using star schema and 40+ DAX measures with automated Benford's law anomaly detection.",
+      problem: "Procurement records lacked structured dimensions, making it difficult to detect supplier price creep, delayed deliveries (OTIF), and potential duplicate invoices.",
+      approach: "Engineered a dimensional star schema using dbt and PostgreSQL. Created 40+ DAX measures tracking On-Time In-Full (OTIF), supplier concentration, and invoice anomalies.",
+      result: "Streamlined audit oversight and flagged high-risk purchase order variances automatically.",
+      metrics: [
+        { label: "Purchase Lines Modeled", value: "~420K" },
+        { label: "DAX Measures Built", value: "40+" },
+        { label: "Fraud Check Method", value: "Benford's Law" },
+      ],
+      visualType: "star-schema",
+      githubUrl: "TODO: https://github.com/abirrouag/procurement-analytics",
+      liveDemoUrl: undefined, // TODO: add URL if available
+    },
+    {
+      id: "proj-3",
+      title: "Customer Churn & Lifetime Value Prediction",
+      subtitle: "Predictive analytics pipeline and SHAP explainability model for customer retention",
+      stack: ["Python", "LightGBM", "SHAP"],
+      categories: ["ML", "Data Engineering"],
+      keyFinding: "Cleaned 1.07M raw transactions into 776K purchase events across 5,852 customers, building a 90-day churn prediction rule.",
+      problem: "E-commerce team struggled to identify churn risks before customers went inactive, leading to generic and costly retention campaigns.",
+      approach: "Extracted RFM features from transactional data, split dataset chronologically, trained LightGBM classifier, and used SHAP values to explain individual risk drivers.",
+      result: "Defined targeted retention rules that focused marketing spend on high-LTV at-risk customers.",
+      metrics: [
+        { label: "Raw Transactions", value: "1.07M" },
+        { label: "Clean Purchase Events", value: "776K" },
+        { label: "Unique Customers", value: "5,852" },
+        { label: "Prediction Window", value: "90-Day Churn" },
+      ],
+      visualType: "pipeline",
+      githubUrl: "TODO: https://github.com/abirrouag/churn-ltv-prediction",
+      liveDemoUrl: undefined, // TODO: add URL if available
+    },
+  ],
+
+  skillsStarSchema: {
+    factTable: {
+      id: "fact-ba",
+      title: "Business Analysis (Fact Table)",
+      type: "fact",
+      iconName: "Target",
+      skills: [
+        "Data Gathering & Requirements",
+        "Gap Analysis & Use Cases",
+        "Process Mapping & Internal Audit",
+        "Solution Design & Testing",
+        "KPI & Executive Reporting",
+        "Stakeholder Alignment",
+      ],
+    },
+    dimensions: [
+      {
+        id: "dim-analytics",
+        title: "Data & Analytics (Dim)",
+        type: "dimension",
+        iconName: "BrainCircuit",
+        skills: [
+          "Python (Pandas, Scikit-learn)",
+          "LightGBM & XGBoost",
+          "SQL (PostgreSQL)",
+          "Exploratory Data Analysis (EDA)",
+          "Predictive Modeling & SHAP",
+          "A/B Testing & Attribution",
+        ],
+      },
+      {
+        id: "dim-bi",
+        title: "BI & Visualization (Dim)",
+        type: "dimension",
+        iconName: "BarChart3",
+        skills: [
+          "Power BI & Advanced DAX",
+          "Looker Studio",
+          "Streamlit Analytics Apps",
+          "Plotly / Interactive Charts",
+          "Advanced Excel Modeling",
+        ],
+      },
+      {
+        id: "dim-engineering",
+        title: "Data Eng & Tools (Dim)",
+        type: "dimension",
+        iconName: "Wrench",
+        skills: [
+          "ETL Pipelines",
+          "Dimensional Star Schema",
+          "dbt (Data Build Tool)",
+          "Data Quality Validation",
+          "GA4 & Marketing Analytics",
+          "Git / GitHub / Docker",
+        ],
+      },
+    ],
+  },
+
+  certifications: [
+    {
+      id: "cert-1",
+      title: "Power BI for Beginners",
+      issuer: "Credential ID: 10853438",
+      date: "Oct 2026",
+      status: "Completed",
+      badgeText: "Verified Credential",
+    },
+    {
+      id: "cert-2",
+      title: "Microsoft Power BI Data Analyst (PL-300)",
+      issuer: "Microsoft Certification",
+      date: "Target: 2026",
+      status: "In progress",
+      badgeText: "In Progress",
+    },
+  ],
+
+  leadership: {
+    intro: "Leading teams, budgets and people across international student organizations — the soft skills behind every analysis.",
+    whyItMatters: {
+      title: "Why leadership matters for a Business Analyst",
+      description: "Technical skills extract data, but leadership turns data into organizational change. My associative background directly translates to key BA competencies:",
+      mapping: [
+        { domain: "Audit Experience", baSkill: "Translates to rigorous process gap analysis & internal control verification." },
+        { domain: "Finance Leadership", baSkill: "Translates to budget discipline, financial modeling & ROI tracking." },
+        { domain: "Recruitment Management", baSkill: "Translates to stakeholder communication, interviewing & requirement scoping." },
+        { domain: "International Entities", baSkill: "Translates to cross-cultural alignment & remote team collaboration." },
+      ],
+    },
+    items: [
+      {
+        id: "lead-1",
+        organization: "AIESEC in Sousse",
+        role: "Vice President, Finance & Legalities",
+        period: "Nov 2023 – Jan 2025",
+        category: "Finance & Audit",
+        bullets: [
+          "Led budgeting, financial reporting, compliance and internal controls for a 120+ member organization.",
+          "Overseer of event budgets exceeding 20,000 TND across 11+ major events including Global Village, TEDx, and MeetUP PRO.",
+          "Coordinated financial workflows between HR, marketing, and operations teams to guarantee project solvency.",
+        ],
+        highlightMetric: "20,000+ TND Budgets Managed · 120+ Members · 11+ Events",
+      },
+      {
+        id: "lead-2",
+        organization: "AIESEC in Sousse",
+        role: "Audit Manager",
+        period: "Feb 2024 – Feb 2025",
+        category: "Finance & Audit",
+        bullets: [
+          "Conducted comprehensive internal audits and reviewed financial transaction journals for entity activities.",
+          "Identified operational process gaps and compliance risks, formulating corrective action recommendations for leadership.",
+        ],
+        highlightMetric: "Internal Control Enforcement & Risk Mitigation",
+      },
+      {
+        id: "lead-3",
+        organization: "AIESEC in Sousse",
+        role: "Finance & Legalities Manager",
+        period: "Feb 2023 – Feb 2024",
+        category: "Finance & Audit",
+        bullets: [
+          "Managed day-to-day budgeting, financial reporting, and contract compliance.",
+          "Collaborated with cross-functional project leads to streamline resource allocation.",
+        ],
+      },
+      {
+        id: "lead-4",
+        organization: "AIESEC in Sousse",
+        role: "Recruitment Manager",
+        period: "Oct 2022 – Feb 2025",
+        category: "People & Recruitment",
+        bullets: [
+          "Managed recruitment campaigns, candidate outreach, and interview evaluation frameworks.",
+          "Overseer of screening, interviewing, selection, and onboarding for 200+ candidates.",
+        ],
+        highlightMetric: "200+ Candidates Screened & Onboarded",
+      },
+      {
+        id: "lead-5",
+        organization: "AIESEC Canada — Entity Support Team",
+        role: "Social Media Manager",
+        period: "Jul 2023 – Dec 2024",
+        category: "Marketing & Communication",
+        bullets: [
+          "Managed content planning, publishing schedules, and digital audience engagement.",
+          "Collaborated remotely with international team members across timezones.",
+        ],
+        highlightMetric: "International Remote Team Collaboration",
+      },
+      {
+        id: "lead-6",
+        organization: "Hult Prize, ISITCOM Sousse",
+        role: "Vice President, Marketing & HR",
+        period: "2023",
+        category: "People & Recruitment",
+        bullets: [
+          "Led recruitment campaigns, student team selection, and internal communication strategy.",
+          "Managed promotional channels to drive student startup competition engagement.",
+        ],
+      },
+      {
+        id: "lead-7",
+        organization: "Youth Speak",
+        role: "Vice President, Marketing & PR",
+        period: "Sep 2022 – Jan 2023",
+        category: "Marketing & Communication",
+        bullets: [
+          "Coordinated speaker and sponsor outreach for youth leadership forum.",
+          "Planned and executed marketing campaigns attracting an audience of 1,000+ attendees.",
+        ],
+        highlightMetric: "1,000+ Attendees Event Marketing",
+      },
+      {
+        id: "lead-8",
+        organization: "Enactus",
+        role: "Vice President, Marketing",
+        period: "2022",
+        category: "Marketing & Communication",
+        bullets: [
+          "Developed target audience positioning and promotional strategies for social entrepreneurship projects.",
+        ],
+      },
+    ],
+  },
+
+  education: [
+    {
+      id: "edu-1",
+      degree: "Engineering Degree in Computer Science",
+      institution: "Polytechnic University of Sousse",
+      period: "2023 – Present",
+      status: "In progress",
+    },
+    {
+      id: "edu-2",
+      degree: "Engineering Degree in Telecommunications",
+      institution: "ISITCOM Sousse (Higher Institute of Computer Science and Communication Technologies)",
+      period: "2020 – 2023",
+      status: "Completed",
+    },
+  ],
+
+  contact: {
+    headline: "Let's turn your data into decisions.",
+    formEndpoint: "TODO: https://formspree.io/f/your-form-id",
+  },
+};
